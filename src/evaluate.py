@@ -10,7 +10,7 @@ from torchvision import transforms
 checkpoint_path = 'checkpoints/mnist_state_epoch11.pth'
 
 
-def prep_data(target_path='test/0.jpg'):
+def prep_data(target_path='test/2.jpg'):
     raw_img = Image.open(target_path)
     raw_img = raw_img.convert('L')
     raw_img = raw_img.resize((28, 28))
